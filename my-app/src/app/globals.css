@@ -1,26 +1,31 @@
-@import "tailwindcss";
+ /* Todos los comentarios de este archivo estan generadas por la IA Copilot */
+@import "tailwindcss"; /* Importa Tailwind CSS para usar sus utilidades en el proyecto. */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Define variables CSS globales para colores y fuentes. */
+  --background: #ffffff; /* Color de fondo predeterminado (modo claro). */
+  --foreground: #171717; /* Color de texto predeterminado (modo claro). */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Define un tema personalizado utilizando las variables globales. */
+  --color-background: var(--background); /* Asigna el color de fondo global al tema. */
+  --color-foreground: var(--foreground); /* Asigna el color de texto global al tema. */
+  --font-sans: var(--font-geist-sans); /* Asigna la fuente Geist Sans al tema. */
+  --font-mono: var(--font-geist-mono); /* Asigna la fuente Geist Mono al tema. */
 }
 
 @media (prefers-color-scheme: dark) {
+  /* Cambia los colores globales cuando el usuario tiene activado el modo oscuro. */
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; /* Color de fondo para modo oscuro. */
+    --foreground: #ededed; /* Color de texto para modo oscuro. */
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Estilos globales para el cuerpo del documento. */
+  background: var(--background); /* Aplica el color de fondo definido en las variables. */
+  color: var(--foreground); /* Aplica el color de texto definido en las variables. */
+  font-family: Arial, Helvetica, sans-serif; /* Define la fuente predeterminada para el texto. */
 }
