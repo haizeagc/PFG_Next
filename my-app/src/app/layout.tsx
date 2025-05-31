@@ -31,20 +31,20 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${openSans.className} antialiased`}>
         {/* Franja de información de contacto */}
-        <div className="bg-white text-black p-2 flex justify-end fixed top-0 left-0 w-full z-50">
+        <div className="bg-[#b6b8ff] text-black p-2 flex justify-end fixed top-0 left-0 w-full z-50">
           <p className="text-xs sm:text-sm text-right">
             Contacto: +34 234 567 890 | Email: haizea@ejemplo.com
           </p>
         </div>
 
         {/* Menú horizontal con 5 apartados */}
-        <nav className="bg-[#fff700] p-4 shadow-md fixed top-[32px] left-0 w-full z-40">
+        <nav className="bg-[#5b60ff] p-4 shadow-md fixed top-[32px] left-0 w-full z-40">
           <ul className="flex justify-center gap-8">
-            <li className="text-sm font-normal text-black hover:font-bold hover:text-orange-500 active:text-orange-700 cursor-pointer">Inicio</li>
-            <li className="text-sm font-normal text-black hover:font-bold hover:text-orange-500 active:text-orange-700 cursor-pointer">Servicios</li>
-            <li className="text-sm font-normal text-black hover:font-bold hover:text-orange-500 active:text-orange-700 cursor-pointer">Acerca de</li>
-            <li className="text-sm font-normal text-black hover:font-bold hover:text-orange-500 active:text-orange-700 cursor-pointer">Contacto</li>
-            <li className="text-sm font-normal text-black hover:font-bold hover:text-orange-500 active:text-orange-700 cursor-pointer">Blog</li>
+            <li className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">Inicio</li>
+            <li className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">Servicios</li>
+            <li className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">Acerca de</li>
+            <li className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">Contacto</li>
+            <li className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">Blog</li>
           </ul>
         </nav>
 
