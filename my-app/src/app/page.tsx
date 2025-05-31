@@ -1,4 +1,4 @@
-//Todos los comentarios de este archivo estan generadas por la IA Copilot
+//Todos los comentarios de este archivo estan generados por la IA Copilot
 
 import Image from "next/image"; // Importa el componente Image de Next.js para manejar imágenes optimizadas.
 
