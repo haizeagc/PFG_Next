@@ -21,15 +21,13 @@ export const metadata: Metadata = {
   description: "App creada para probar el framework de next.js", // Descripción de la aplicación.
 };
 
-// Componente RootLayout que envuelve toda la aplicación.
 export default function RootLayout({
   children, // Recibe los elementos hijos que se renderizarán dentro del layout.
 }: Readonly<{
   children: React.ReactNode; // Define el tipo de los elementos hijos como React.ReactNode.
 }>) {
   return (
-    <html lang="es">
-      <body className={`${openSans.className} antialiased`}>
+    <html lang="es"><body className={`${openSans.className} antialiased`}>
         {/* Franja de información de contacto */}
         <div className="bg-[#b6b8ff] text-black p-2 flex justify-end fixed top-0 left-0 w-full z-50">
           <p className="text-xs sm:text-sm text-right">
