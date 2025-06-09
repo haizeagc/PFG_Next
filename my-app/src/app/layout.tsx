@@ -1,5 +1,6 @@
 //Todos los comentarios de este archivo estan generados por la IA Copilot
 
+import Link from 'next/link'
 // Importa los tipos de metadatos de Next.js para definir información como el título y la descripción de la página.
 import type { Metadata } from "next";
 
@@ -35,12 +36,12 @@ export default function RootLayout({
           </p>
         </div>
 
-        {/* Menú horizontal con 5 apartados */}
+        {/* Menú horizontal con 3 apartados */}
         <nav className="bg-[#5b60ff] p-4 shadow-md fixed top-[32px] left-0 w-full z-40">
           <ul className="flex justify-center gap-8">
-            <li> <a href= "" className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">INICIO </a></li>
-            <li> <a href= "/tarifas" className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">TARIFAS</a> </li>
-            <li> <a href= "/catalogo" className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">CATALOGO</a> </li>
+            <li> <Link href= "/" className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">INICIO </Link></li>
+            <li> <Link href= "/tarifas" className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">TARIFAS</Link> </li>
+            <li> <Link href= "/catalogo" className="text-sm font-normal text-white hover:font-bold hover:text-black active:text-violet-300 cursor-pointer">CATÁLOGO</Link> </li>
           </ul>
         </nav>
 
