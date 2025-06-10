@@ -1,3 +1,4 @@
+
 // Definición del tipo para una tarifa
 export type Tarifa = {
   id: number; // Identificador único de la tarifa

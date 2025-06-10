@@ -1,12 +1,4 @@
-export type Tarifa = {
-  id: number; // Identificador único de la tarifa
-  nombre: string; // Nombre de la tarifa (ej. "Plan Básico")
-  descripcion: string; // Descripción de la tarifa
-  precioMensual: number; // Precio mensual de la tarifa
-  minutosIncluidos: number; // Minutos incluidos en la tarifa
-  datosIncluidos: string; // Datos incluidos (ej. "5GB", "Ilimitados")
-  mensajesIncluidos: number; // Mensajes SMS incluidos
-};
+import { Tarifa } from "@/app/definition";
 
 export default async function Tarifas() {
   const response = await fetch('http://localhost:3001/tarifas')
