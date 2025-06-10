@@ -3,38 +3,38 @@
         {
             "id": 1,
             "nombre": "Tarifa Básica",
-            "descripcion": 100.00,
-            "precioMensual": "Tarifa básica para serviços gerais.",
+            "descripcion": "Tarifa básica con lo necesario.",
+            "precioMensual": 59.00,
             "minutosIncluidos": 100,
-            "datosIncluidos": 5,
-            "mensajesIncluidos": 50
+            "datosIncluidos": 100,
+            "mensajesIncluidos": 100
         },
         {
             "id": 2,
             "nombre": "Tarifa Normal",
-            "descripcion": 100.00,
-            "precioMensual": "Tarifa básica para serviços gerais.",
-            "minutosIncluidos": 100,
-            "datosIncluidos": 5,
-            "mensajesIncluidos": 50
+            "descripcion": "Tarifa normal con más beneficios.",
+            "precioMensual": 59.00,
+            "minutosIncluidos": 200,
+            "datosIncluidos": 200,
+            "mensajesIncluidos": 200
         },
         {
             "id": 3,
             "nombre": "Tarifa Premium",
-            "descripcion": 100.00,
-            "precioMensual": "Tarifa básica para serviços gerais.",
-            "minutosIncluidos": 100,
-            "datosIncluidos": 5,
-            "mensajesIncluidos": 50
+            "descripcion": "Tarifa premium con beneficios adicionales.",
+            "precioMensual": 28.00,
+            "minutosIncluidos": 300,
+            "datosIncluidos": 300,
+            "mensajesIncluidos": 300
         },
         {
             "id": 4,
             "nombre": "Tarifa Empresarial",
-            "descripcion": 100.00,
-            "precioMensual": "Tarifa básica para serviços gerais.",
-            "minutosIncluidos": 100,
-            "datosIncluidos": 5,
-            "mensajesIncluidos": 50
+            "descripcion": "Tarifa preparada para las empresas.",
+            "precioMensual": 19.90,
+            "minutosIncluidos": 400,
+            "datosIncluidos": 300,
+            "mensajesIncluidos": 400
         }
     ],
 
