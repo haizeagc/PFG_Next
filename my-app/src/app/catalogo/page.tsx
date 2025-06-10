@@ -16,7 +16,7 @@ export default async function Catalogo() {
           <p className="text-sm text-gray-600">RAM: {telefono.ram}</p>
           <p className="text-sm text-gray-600">Cámara: {telefono.camara}</p>
           <p className="text-sm text-gray-600">Batería: {telefono.bateria}</p>
-          <p className="text-sm text-gray-600 font-bold">Precio: {telefono.precio} €</p>
+          <p className="text-sm text-gray-600 font-bold">Precio: {telefono.precio}€</p>
         </div>
       ))}
     </div>
