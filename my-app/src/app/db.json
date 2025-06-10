@@ -1,0 +1,344 @@
+{
+    "tarifas": [
+        {
+            "id": 1,
+            "nombre": "Tarifa Básica",
+            "descripcion": "Tarifa básica con lo necesario.",
+            "precioMensual": 59.00,
+            "minutosIncluidos": 100,
+            "datosIncluidos": 100,
+            "mensajesIncluidos": 100
+        },
+        {
+            "id": 2,
+            "nombre": "Tarifa Normal",
+            "descripcion": "Tarifa normal con más beneficios.",
+            "precioMensual": 59.00,
+            "minutosIncluidos": 200,
+            "datosIncluidos": 200,
+            "mensajesIncluidos": 200
+        },
+        {
+            "id": 3,
+            "nombre": "Tarifa Premium",
+            "descripcion": "Tarifa premium con beneficios adicionales.",
+            "precioMensual": 28.00,
+            "minutosIncluidos": 300,
+            "datosIncluidos": 300,
+            "mensajesIncluidos": 300
+        },
+        {
+            "id": 4,
+            "nombre": "Tarifa Empresarial",
+            "descripcion": "Tarifa preparada para las empresas.",
+            "precioMensual": 19.90,
+            "minutosIncluidos": 400,
+            "datosIncluidos": 300,
+            "mensajesIncluidos": 400
+        }
+    ],
+
+    "telefonos": [
+        {
+            "id": 1,
+            "marca": "123456789",
+            "modelo": "Telefone de contato principal.",
+            "almacenamiento": 64,
+            "ram": 4,
+            "camara": 12,
+            "bateria": 4000,
+            "precio": 299.99
+        },
+        {
+            "id": 2,
+            "marca": "987654321",
+            "modelo": "Telefone de contato secundário.",
+            "almacenamiento": 128,
+            "ram": 6,
+            "camara": 48,
+            "bateria": 5000,
+            "precio": 499.99
+        },
+        {
+            "id": 3,
+            "marca": "456789123",
+            "modelo": "Telefone de contato terciário.",
+            "almacenamiento": 256,
+            "ram": 8,
+            "camara": 108,
+            "bateria": 6000,
+            "precio": 799.99
+        },
+        {
+            "id": 4,
+            "marca": "321654987",
+            "modelo": "Telefone de contato quaternário.",
+            "almacenamiento": 512,
+            "ram": 12,
+            "camara": 200,
+            "bateria": 7000,
+            "precio": 999.99
+        },
+        {
+            "id": 5,
+            "marca": "654321789",
+            "modelo": "Telefone de contato quinário.",
+            "almacenamiento": 1024,
+            "ram": 16,
+            "camara": 300,
+            "bateria": 8000,
+            "precio": 1299.99
+        },
+        {
+            "id": 6,
+            "marca": "789123456",
+            "modelo": "Telefone de contato senário.",
+            "almacenamiento": 2048,
+            "ram": 32,
+            "camara": 400,
+            "bateria": 9000,
+            "precio": 1599.99
+        },
+        {
+            "id": 7,
+            "marca": "123789456",
+            "modelo": "Telefone de contato septenário.",
+            "almacenamiento": 4096,
+            "ram": 64,
+            "camara": 500,
+            "bateria": 10000,
+            "precio": 1999.99
+        },
+        {
+            "id": 8,
+            "marca": "456123789",
+            "modelo": "Telefone de contato octonário.",
+            "almacenamiento": 8192,
+            "ram": 128,
+            "camara": 600,
+            "bateria": 12000,
+            "precio": 2499.99
+        },
+        {
+            "id": 9,
+            "marca": "789456123",
+            "modelo": "Telefone de contato nonário.",
+            "almacenamiento": 16384,
+            "ram": 256,
+            "camara": 700,
+            "bateria": 15000,
+            "precio": 2999.99
+        },
+        {
+            "id": 10,
+            "marca": "321987654",
+            "modelo": "Telefone de contato decenário.",
+            "almacenamiento": 32768,
+            "ram": 512,
+            "camara": 800,
+            "bateria": 20000,
+            "precio": 3999.99
+        },
+        {
+            "id": 11,
+            "marca": "654987321",
+            "modelo": "Telefone de contato undecenário.",
+            "almacenamiento": 65536,
+            "ram": 1024,
+            "camara": 900,
+            "bateria": 25000,
+            "precio": 4999.99
+        },
+        {
+            "id": 12,
+            "marca": "987321654",
+            "modelo": "Telefone de contato duodecenário.",
+            "almacenamiento": 131072,
+            "ram": 2048,
+            "camara": 1000,
+            "bateria": 30000,
+            "precio": 5999.99
+        },
+        {
+            "id": 13,
+            "marca": "123456789",
+            "modelo": "Telefone de contato tredecenário.",
+            "almacenamiento": 262144,
+            "ram": 4096,
+            "camara": 1200,
+            "bateria": 35000,
+            "precio": 6999.99
+        },
+        {
+            "id": 14,
+            "marca": "987654321",
+            "modelo": "Telefone de contato quattuordecenário.",
+            "almacenamiento": 524288,
+            "ram": 8192,
+            "camara": 1400,
+            "bateria": 40000,
+            "precio": 7999.99
+        },
+        {
+            "id": 15,
+            "marca": "456789123",
+            "modelo": "Telefone de contato quindecenário.",
+            "almacenamiento": 1048576,
+            "ram": 16384,
+            "camara": 1600,
+            "bateria": 45000,
+            "precio": 8999.99
+        },
+        {
+            "id": 16,
+            "marca": "321654987",
+            "modelo": "Telefone de contato sexdecenário.",
+            "almacenamiento": 2097152,
+            "ram": 32768,
+            "camara": 1800,
+            "bateria": 50000,
+            "precio": 9999.99
+        },
+        {
+            "id": 17,
+            "marca": "654321789",
+            "modelo": "Telefone de contato septendecenário.",
+            "almacenamiento": 4194304,
+            "ram": 65536,
+            "camara": 2000,
+            "bateria": 60000,
+            "precio": 10999.99
+        },
+        {
+            "id": 18,
+            "marca": "789123456",
+            "modelo": "Telefone de contato duodecim.",
+            "almacenamiento": 8388608,
+            "ram": 131072,
+            "camara": 2200,
+            "bateria": 70000,
+            "precio": 11999.99
+        },
+        {
+            "id": 19,
+            "marca": "123789456",
+            "modelo": "Telefone de contato tredecim.",
+            "almacenamiento": 16777216,
+            "ram": 262144,
+            "camara": 2400,
+            "bateria": 80000,
+            "precio": 12999.99
+        },
+        {
+            "id": 20,
+            "marca": "456123789",
+            "modelo": "Telefone de contato quattuordecim.",
+            "almacenamiento": 33554432,
+            "ram": 524288,
+            "camara": 2600,
+            "bateria": 90000,
+            "precio": 13999.99
+        },
+        {
+            "id": 21,
+            "marca": "789456123",
+            "modelo": "Telefone de contato quindecim.",
+            "almacenamiento": 67108864,
+            "ram": 1048576,
+            "camara": 2800,
+            "bateria": 100000,
+            "precio": 14999.99
+        },
+        {
+            "id": 22,
+            "marca": "321987654",
+            "modelo": "Telefone de contato sexdecim.",
+            "almacenamiento": 134217728,
+            "ram": 2097152,
+            "camara": 3000,
+            "bateria": 110000,
+            "precio": 15999.99
+        },
+        {
+            "id": 23,
+            "marca": "654987321",
+            "modelo": "Telefone de contato septendecim.",
+            "almacenamiento": 268435456,
+            "ram": 4194304,
+            "camara": 3200,
+            "bateria": 120000,
+            "precio": 16999.99
+        },
+        {
+            "id": 24,
+            "marca": "987321654",
+            "modelo": "Telefone de contato octodecim.",
+            "almacenamiento": 536870912,
+            "ram": 8388608,
+            "camara": 3400,
+            "bateria": 130000,
+            "precio": 17999.99
+        },
+        {
+            "id": 25,
+            "marca": "123456789",
+            "modelo": "Telefone de contato novendecim.",
+            "almacenamiento": 1073741824,
+            "ram": 16777216,
+            "camara": 3600,
+            "bateria": 140000,
+            "precio": 18999.99
+        },
+        {
+            "id": 26,
+            "marca": "987654321",
+            "modelo": "Telefone de contato vigésimo.",
+            "almacenamiento": 2147483648,
+            "ram": 33554432,
+            "camara": 3800,
+            "bateria": 150000,
+            "precio": 19999.99
+        },
+        {
+            "id": 27,
+            "marca": "456789123",
+            "modelo": "Telefone de contato vigésimo-primeiro.",
+            "almacenamiento": 4294967296,
+            "ram": 67108864,
+            "camara": 4000,
+            "bateria": 160000,
+            "precio": 20999.99
+        },
+        {
+            "id": 28,
+            "marca": "321654987",
+            "modelo": "Telefone de contato vigésimo-segundo.",
+            "almacenamiento": 8589934592,
+            "ram": 134217728,
+            "camara": 4200,
+            "bateria": 170000,
+            "precio": 21999.99
+        },
+        {
+            "id": 29,
+            "marca": "654321789",
+            "modelo": "Telefone de contato vigésimo-terceiro.",
+            "almacenamiento": 17179869184,
+            "ram": 268435456,
+            "camara": 4400,
+            "bateria": 180000,
+            "precio": 22999.99
+        },
+        {
+            "id": 30,
+            "marca": "789123456",
+            "modelo": "Telefone de contato vigésimo-quarto.",
+            "almacenamiento": 34359738368,
+            "ram": 536870912,
+            "camara": 4600,
+            "bateria": 190000,
+            "precio": 23999.99
+        }
+
+    ]
+}

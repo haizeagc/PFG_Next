@@ -1,3 +1,4 @@
+
 // Definición del tipo para una tarifa
 export type Tarifa = {
   id: number; // Identificador único de la tarifa
@@ -18,5 +19,6 @@ export type Movil = {
   ram: string; // Memoria RAM (ej. "4GB", "8GB")
   camara: string; // Resolución de la cámara (ej. "48MP", "108MP")
   bateria: string; // Capacidad de la batería (ej. "4000mAh", "5000mAh")
-  precio: number; // Precio del móvil
+  precio: number;
+  imagen: string; // Precio del móvil
 };
