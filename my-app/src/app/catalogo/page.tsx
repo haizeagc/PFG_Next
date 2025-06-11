@@ -11,6 +11,10 @@ export default async function Catalogo() {
           key={telefono.id}
           className="border-4 border-purple-500 p-4 rounded shadow-md bg-gray-100 w-64 h-auto transition-transform hover:scale-105"
         >
+          <img
+            src={'imagenes/${telefono.id}.webp'} // Asegúrate de que la ruta sea correcta
+            alt={`${telefono.marca} ${telefono.modelo}`} className="w-full h-40 object-cover mb-4 rounded"></img>
+
           <h2 className="font-bold text-black">{telefono.marca} {telefono.modelo}</h2>
           <p className="text-sm text-gray-600">Almacenamiento: {telefono.almacenamiento}</p>
           <p className="text-sm text-gray-600">RAM: {telefono.ram}</p>
