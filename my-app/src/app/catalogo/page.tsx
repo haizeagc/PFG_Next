@@ -1,4 +1,5 @@
 import { Movil } from "@/app/definition"; // Importa el tipo Movil desde definition.tsx
+import Image from "next/image"; // Importa el componente Image de Next.js
 
 export default async function Catalogo() {
   const response = await fetch("http://localhost:3001/telefonos");
@@ -11,10 +12,13 @@ export default async function Catalogo() {
           key={telefono.id}
           className="border-4 border-purple-500 p-4 rounded shadow-md bg-gray-100 w-64 h-auto transition-transform hover:scale-105"
         >
-          <img
-            src={'imagenes/${telefono.id}.webp'} // Asegúrate de que la ruta sea correcta
-            alt={`${telefono.marca} ${telefono.modelo}`} className="w-full h-40 object-cover mb-4 rounded"></img>
-
+          <Image
+            src={`/imagenes/${telefono.id}.jpg`} // Ruta dinámica basada en el id del teléfono
+            alt={`${telefono.marca} ${telefono.modelo}`}
+            width={256} // Ancho de la imagen
+            height={160} // Altura de la imagen
+            className="w-full h-50 object-cover mb-4 rounded"
+          />
           <h2 className="font-bold text-black">{telefono.marca} {telefono.modelo}</h2>
           <p className="text-sm text-gray-600">Almacenamiento: {telefono.almacenamiento}</p>
           <p className="text-sm text-gray-600">RAM: {telefono.ram}</p>
