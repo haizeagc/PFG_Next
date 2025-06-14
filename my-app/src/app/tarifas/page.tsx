@@ -7,9 +7,7 @@ export default async function Tarifas() {
   return (
     <div className="flex flex-col items-center justify-center p-8">
       {/* Cuadrado morado con el primer h1 */}
-      <div className="text-center p-4 border rounded shadow-md bg-purple-500 text-white mb-8">
         <h1 className="text-lg font-bold">TARIFAS DE LA EMPRESA</h1>
-      </div>
 
       {/* Contenedor de las tarifas */}
       <div className="text-center p-4 border rounded shadow-md bg-white">
