@@ -1,4 +1,4 @@
- /* Todos los comentarios de este archivo estan generados por la IA Copilot */
+/* Todos los comentarios de este archivo estan generados por la IA Copilot */
 @import "tailwindcss"; /* Importa Tailwind CSS para usar sus utilidades en el proyecto. */
 
 :root {
@@ -24,8 +24,7 @@
 }
 
 body {
-  /* Estilos globales para el cuerpo del documento. */
-  background: var(--background); /* Aplica el color de fondo definido en las variables. */
-  color: var(--foreground); /* Aplica el color de texto definido en las variables. */
-  font-family: Arial, Helvetica, sans-serif; /* Define la fuente predeterminada para el texto. */
+  background: #ffffff; /* Fondo blanco por defecto. */
+  color: #171717; /* Color de texto predeterminado. */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada. */
 }
