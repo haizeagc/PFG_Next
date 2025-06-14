@@ -1,9 +1,9 @@
- /* Todos los comentarios de este archivo estan generados por la IA Copilot */
+/* Todos los comentarios de este archivo estan generados por la IA Copilot */
 @import "tailwindcss"; /* Importa Tailwind CSS para usar sus utilidades en el proyecto. */
 
 :root {
   /* Define variables CSS globales para colores y fuentes. */
-  --background: #ffffff; /* Color de fondo predeterminado (modo claro). */
+  --background: #dbdbdb; /* Color de fondo predeterminado (modo claro). */
   --foreground: #171717; /* Color de texto predeterminado (modo claro). */
 }
 
@@ -15,17 +15,8 @@
   --font-mono: var(--font-geist-mono); /* Asigna la fuente Geist Mono al tema. */
 }
 
-@media (prefers-color-scheme: dark) {
-  /* Cambia los colores globales cuando el usuario tiene activado el modo oscuro. */
-  :root {
-    --background: #0a0a0a; /* Color de fondo para modo oscuro. */
-    --foreground: #ededed; /* Color de texto para modo oscuro. */
-  }
-}
-
 body {
-  /* Estilos globales para el cuerpo del documento. */
-  background: var(--background); /* Aplica el color de fondo definido en las variables. */
-  color: var(--foreground); /* Aplica el color de texto definido en las variables. */
-  font-family: Arial, Helvetica, sans-serif; /* Define la fuente predeterminada para el texto. */
+  background: #ffffff; /* Fondo blanco por defecto. */
+  color: #171717; /* Color de texto predeterminado. */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada. */
 }
