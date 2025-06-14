@@ -1,4 +1,4 @@
-import { Movil } from "@/app/definition"; // Importa el tipo Movil desde definition.tsx
+import { Movil } from "@/app/ui/definition"; // Importa el tipo Movil desde definition.tsx
 import Image from "next/image"; // Importa el componente Image de Next.js
 
 export default async function Catalogo() {
@@ -11,7 +11,7 @@ export default async function Catalogo() {
         {telefonos.map((telefono: Movil) => (
           <div
             key={telefono.id}
-            className="border-1 border-black p-4 rounded shadow-md w-64 h-auto transition-transform hover:scale-105"
+            className="p-4 rounded shadow-lg w-64 h-auto transition-transform hover:scale-105"
           >
             <Image
               src={`/imagenes/${telefono.id}.jpg`} // Ruta dinámica basada en el id del teléfono

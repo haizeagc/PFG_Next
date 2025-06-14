@@ -3,7 +3,7 @@
 
 :root {
   /* Define variables CSS globales para colores y fuentes. */
-  --background: #ffffff; /* Color de fondo predeterminado (modo claro). */
+  --background: #dbdbdb; /* Color de fondo predeterminado (modo claro). */
   --foreground: #171717; /* Color de texto predeterminado (modo claro). */
 }
 
@@ -13,14 +13,6 @@
   --color-foreground: var(--foreground); /* Asigna el color de texto global al tema. */
   --font-sans: var(--font-geist-sans); /* Asigna la fuente Geist Sans al tema. */
   --font-mono: var(--font-geist-mono); /* Asigna la fuente Geist Mono al tema. */
-}
-
-@media (prefers-color-scheme: dark) {
-  /* Cambia los colores globales cuando el usuario tiene activado el modo oscuro. */
-  :root {
-    --background: #0a0a0a; /* Color de fondo para modo oscuro. */
-    --foreground: #ededed; /* Color de texto para modo oscuro. */
-  }
 }
 
 body {

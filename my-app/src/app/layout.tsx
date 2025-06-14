@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import Menu from "./menu";
+import Menu from "./ui/menu";
 
 // Configuración de la fuente Open Sans con estilo normal.
 const openSans = Open_Sans({
@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen">
           {/* Franja de información de contacto */}
           <div className="bg-[#b6b8ff] text-black p-2 flex justify-end fixed top-0 left-0 w-full z-50">
-            <p className="text-xs sm:text-sm text-right">
+            <p className="text-xs sm:text-sm text-right font-bold">
               Contacto: +34 234 567 890 | Email: haizea@ejemplo.com
             </p>
           </div>
