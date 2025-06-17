@@ -24,7 +24,7 @@ export default async function DatoTarifa() {
                 <p className="text-black">Datos Incluidos: {tarifa.datosIncluidos}</p>
                 <p className="text-black">Mensajes Incluidos: {tarifa.mensajesIncluidos}</p>
                 <button className="mt-2 mb-2 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700">
-                  Más información
+                 Más información 
                 </button>
               </div>
             ))}

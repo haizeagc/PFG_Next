@@ -1,7 +1,7 @@
 import DatoTarifa from "../ui/datoTarifa";
 
-
-export default async function Tarifas() {
+//EL BOTON NO FUNCIONA NO SE PUEDEN USAR MODAL PORQUE EL COMPONENTE DATOTARIFA ES ASINCRONO
+export default function Tarifas() {
 
   return (
     <div>
