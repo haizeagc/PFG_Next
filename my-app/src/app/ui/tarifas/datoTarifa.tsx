@@ -1,4 +1,4 @@
-import { Tarifa } from "@/app/ui/definition";
+import { Tarifa } from "@/app/lib/definition";
 
 export default async function DatoTarifa() {
     const response = await fetch("http://localhost:3001/tarifas");

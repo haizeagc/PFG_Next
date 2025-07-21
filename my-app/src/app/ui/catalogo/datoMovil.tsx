@@ -1,4 +1,4 @@
-import { Movil } from "@/app/ui/definition"; // Importa el tipo Movil desde definition.tsx
+import { Movil } from "@/app/lib/definition"; // Importa el tipo Movil desde definition.tsx
 import Image from "next/image"; // Importa el componente Image de Next.js
 
 export default async function DatoMovil() {
