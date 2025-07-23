@@ -5,7 +5,7 @@ export default async function DatoMovil() {
   const response = await fetch("http://localhost:3001/telefonos");
   const telefonos = await response.json();
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-8 mx-auto max-w-screen-xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 p-8 mx-auto max-w-screen-xl">
       {telefonos.map((telefono: Movil) => (
         <div
           key={telefono.id}

@@ -1,3 +1,5 @@
+import { Movil } from "@/app/lib/definition"; // Importa el tipo Movil desde definition.tsx
+
 export default function Filtro() {
   return (
     <div className="w-64 h-auto p-4 border rounded shadow-md bg-gray-100">
