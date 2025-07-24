@@ -1,8 +1,13 @@
+import ImagenesCarrusel from "./ui/imagenesMov";
+
 export default function Home() {
   return (
     <div className="p-8">
       <h1 className="text-center text-2xl mb-4">PAGINA PRINCIPAL</h1>
-      <p className="text-center mb-3">
+
+      <ImagenesCarrusel/>
+
+      <p className="text-center mt-4 mb-3">
         Bienvenido a nuestra tienda de telefonía móvil. Aquí encontrarás los mejores teléfonos y tarifas del mercado.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

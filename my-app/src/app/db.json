@@ -61,7 +61,7 @@
             "modelo": "Redmi 14C",
             "almacenamiento": 128,
             "ram": 4,
-            "precio": "GRATIS"
+            "precio": 0.00
         },
         {
             "id": 4,
@@ -101,7 +101,7 @@
             "modelo": "Blade A35",
             "almacenamiento": 64,
             "ram": 4,
-            "precio": "GRATIS"
+            "precio": 0.00
         },
         {
             "id": 9,
@@ -109,7 +109,7 @@
             "modelo": "Moto G15",
             "almacenamiento": 128,
             "ram": 4,
-            "precio": "GRATIS"
+            "precio": 0.00
         },
         {
             "id": 10,
@@ -117,7 +117,7 @@
             "modelo": "Redmi 13C",
             "almacenamiento": 128,
             "ram": 5,
-            "precio": "GRATIS"
+            "precio": 0.00
         },
         {
             "id": 11,
@@ -125,7 +125,7 @@
             "modelo": "Blade A55",
             "almacenamiento": 128,
             "ram": 4,
-            "precio": "GRATIS"
+            "precio": 0.00
         },
         {
             "id": 12,
