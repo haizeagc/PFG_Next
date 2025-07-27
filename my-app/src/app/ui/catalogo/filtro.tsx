@@ -1,6 +1,6 @@
 export default function FiltroSidebar() {
   return (
-    <div className="w-64 h-screen p-4 border-r-2 border-purple-500 bg-purple-100 fixed left-0 top-20 shadow-md">
+    <div className="w-64 h-screen p-4 border-r-2 border-[#5b60ff] bg-[#dcddfa] fixed left-0 top-20 shadow-md">
       <h2 className="text-lg font-bold mb-4">Filtros</h2>
 
       {/* Filtro por marca */}
@@ -39,7 +39,7 @@ export default function FiltroSidebar() {
           min="0"
           max="2000"
           step="100"
-          className="w-full mt-2 accent-purple-500"
+          className="w-full mt-2 accent-[#5b60ff]"
         />
       </div>
 
@@ -65,7 +65,7 @@ export default function FiltroSidebar() {
       {/* Botón para aplicar filtros */}
       <button
         type="button"
-        className="w-full bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700"
+        className="w-full bg-[#5b60ff] text-white px-4 py-2 rounded hover:bg-[#2f36fa]"
       >
         Aplicar Filtros
       </button>
