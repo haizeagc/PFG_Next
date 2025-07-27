@@ -1,11 +1,11 @@
 export default function FiltroSidebar() {
   return (
-    <div className="w-64 h-screen p-4 border-r-2 border-[#5b60ff] bg-[#dcddfa] fixed left-0 top-20 shadow-md">
+    <div className="w-64 h-screen p-4 border-r-2 border-[#5b60ff] bg-[#ebebff] fixed left-0 top-20 shadow-md">
       <h2 className="text-lg font-bold mb-4">Filtros</h2>
 
       {/* Filtro por marca */}
       <div className="mb-4">
-        <label htmlFor="marca" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="marca" className="block text-sm font-bold text-gray-700">
           Marca:
         </label>
         <select
@@ -29,7 +29,7 @@ export default function FiltroSidebar() {
 
       {/* Filtro por precio */}
       <div className="mb-4">
-        <label htmlFor="precio" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="precio" className="block text-sm font-bold text-gray-700">
           Precio máximo:
         </label>
         <input
@@ -45,7 +45,7 @@ export default function FiltroSidebar() {
 
       {/* Filtro por memoria */}
       <div className="mb-4">
-        <label htmlFor="memoria" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="memoria" className="block text-sm font-bold text-gray-700">
           Memoria:
         </label>
         <select

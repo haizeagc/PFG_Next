@@ -7,24 +7,31 @@ export default async function DatoTarifa() {
     return (
       <div className="flex flex-col items-center justify-center p-8">
         {/* Cuadrado morado con el primer h1 */}
-        <h1 className="text-lg font-bold">TARIFAS DE LA EMPRESA</h1>
+        <h1 className="text-lg font-bold mb-4">TARIFAS DE LA EMPRESA</h1>
   
         {/* Contenedor de las tarifas */}
-        <div className="text-center p-4 shadow-md bg-white">
-          <div className="flex space-x-4 p-4">
+        <div className="w-full p-4 shadow-md bg-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {tarifas.map((tarifa: Tarifa) => (
               <div
                 key={tarifa.id}
-                className="p-4 rounded shadow-lg bg-gray-100 transition-transform hover:scale-105 w-64 h-60"
+                className="p-4 rounded shadow-lg bg-gray-100 transition-transform hover:scale-105"
               >
-                <h2 className="font-semibold text-black">{tarifa.nombre}</h2>
-                <p className="text-black">{tarifa.descripcion}</p>
-                <p className="text-black">Precio Mensual: {tarifa.precioMensual}€</p>
-                <p className="text-black">Minutos Incluidos: {tarifa.minutosIncluidos}</p>
-                <p className="text-black">Datos Incluidos: {tarifa.datosIncluidos}</p>
-                <p className="text-black">Mensajes Incluidos: {tarifa.mensajesIncluidos}</p>
+                <h2 className="font-bold text-black">{tarifa.descripcion}</h2>
+                <p>
+                  <strong>Precio Mensual:</strong> {tarifa.precioMensual}€
+                </p>
+                <p>
+                  <strong>Minutos Incluidos:</strong> {tarifa.minutosIncluidos}
+                </p>
+                <p>
+                  <strong>Datos Incluidos:</strong> {tarifa.datosIncluidos}
+                </p>
+                <p>
+                  <strong>Mensajes Incluidos:</strong> {tarifa.mensajesIncluidos}
+                </p>
                 <button className="mt-2 mb-2 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700">
-                 Más información 
+                  Más información
                 </button>
               </div>
             ))}

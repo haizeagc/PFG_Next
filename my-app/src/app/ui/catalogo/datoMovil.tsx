@@ -18,7 +18,9 @@ export default async function DatoMovil() {
             height={160} // Altura de la imagen
             className="w-full h-50 object-cover mb-4 rounded"
           />
-          <h2 className="font-bold text-black">{telefono.marca} {telefono.modelo}</h2>
+          <h2 className="font-bold text-black text-center">
+            {telefono.marca} {telefono.modelo}
+          </h2>
           <p className="text-sm text-gray-600">Almacenamiento: {telefono.almacenamiento}GB</p>
           <p className="text-sm text-gray-600">RAM: {telefono.ram}</p>
           {/* Renderizado condicional para el precio */}
