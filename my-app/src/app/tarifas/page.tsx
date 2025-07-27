@@ -7,7 +7,7 @@ export default function Tarifas() {
   return (
     <div>
       <DatoTarifa/>
-      <div className="w-full h-1 bg-pink-300 mt-4"></div>
+      <div className="w-full h-8 bg-[#5b60ff]  mt-2"></div>
       <Elecciones/>
     </div>
   );
