@@ -5,9 +5,9 @@ import FiltroSidebar from "../ui/catalogo/filtro";
 import DatoMovil from "../ui/catalogo/datoMovil";
 
 export default function Catalogo() {
-  const [filtros, setFiltros] = useState({ memoria: "", marca: "" }); // Estado inicial vacío para mostrar todos los móviles
+  const [filtros, setFiltros] = useState({ almacenamiento: "", marca: "" }); // Estado inicial vacío para mostrar todos los móviles
 
-  const handleFilterChange = (nuevoFiltro: Partial<{ memoria: string; marca: string }>) => {
+  const handleFilterChange = (nuevoFiltro: Partial<{ almacenamiento: string; marca: string }>) => {
     setFiltros((prevFiltros) => ({ ...prevFiltros, ...nuevoFiltro })); // Actualiza los filtros seleccionados
   };
 

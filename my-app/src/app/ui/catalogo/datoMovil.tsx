@@ -4,13 +4,22 @@ import { useEffect, useState } from "react";
 import { Movil } from "@/app/lib/definition"; 
 import Image from "next/image";
 
-export default function DatoMovil({ filtros }: { filtros: { memoria: string; marca: string } }) {
+export default function DatoMovil({ filtros }: { filtros: { almacenamiento: string; marca: string } }) {
   const [telefonos, setTelefonos] = useState<Movil[]>([]); // Estado con tipado estricto
 
   useEffect(() => {
     const fetchTelefonos = async () => {
-      const queryParams = new URLSearchParams(filtros).toString(); // Convierte los filtros en parámetros de consulta
-      const url = filtros.marca === "" ? `http://localhost:3001/telefonos` : `http://localhost:3001/telefonos?${queryParams}`; // Si no hay marca, usa la URL sin filtros
+      let url = "http://localhost:3001/telefonos";
+
+      // Lógica para manejar los diferentes filtros
+      if (filtros.marca && !filtros.almacenamiento) {
+        url = `http://localhost:3001/telefonos?marca=${filtros.marca}`; // Filtra solo por marca
+      } else if (filtros.marca && filtros.almacenamiento) {
+        url = `http://localhost:3001/telefonos?marca=${filtros.marca}&almacenamiento=${filtros.almacenamiento}`; // Filtra por ambos
+      } else if (filtros.almacenamiento && !filtros.marca) {
+        url = `http://localhost:3001/telefonos?almacenamiento=${filtros.almacenamiento}`; // Filtra solo por memoria
+      }
+
       const response = await fetch(url);
       const data: Movil[] = await response.json(); // Tipado explícito para los datos obtenidos
       setTelefonos(data); // Actualiza los teléfonos obtenidos
@@ -35,12 +44,6 @@ export default function DatoMovil({ filtros }: { filtros: { memoria: string; mar
           </h2>
           <p className="text-sm text-gray-600">Almacenamiento: {telefono.almacenamiento}GB</p>
           <p className="text-sm text-gray-600">RAM: {telefono.ram}</p>
-          {/* Renderizado condicional para el precio */}
-          {telefono.precio === 0 ? (
-            <p className="text-sm text-gray-600 font-bold">GRATIS</p>
-          ) : (
-            <p className="text-sm text-gray-600 font-bold">Precio: {telefono.precio}€</p>
-          )}
         </div>
       ))}
     </div>

@@ -2,7 +2,7 @@
 
 export interface Filtros {
   marca: string;
-  memoria: string;
+  almacenamiento: string;
 }
 
 export default function FiltroSidebar({ onFilterChange }: { onFilterChange: (filtro: Partial<Filtros>) => void }) {
@@ -13,7 +13,7 @@ export default function FiltroSidebar({ onFilterChange }: { onFilterChange: (fil
 
   const handleMemoriaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const memoriaSeleccionada = e.target.value;
-    onFilterChange({ memoria: memoriaSeleccionada }); // Actualiza el filtro de memoria
+    onFilterChange({ almacenamiento: memoriaSeleccionada }); // Actualiza el filtro de memoria
   };
 
   return (
@@ -47,17 +47,16 @@ export default function FiltroSidebar({ onFilterChange }: { onFilterChange: (fil
 
       {/* Filtro por memoria */}
       <div className="mb-4">
-        <label htmlFor="memoria" className="block text-sm font-bold text-gray-700">
+        <label htmlFor="almacenamiento" className="block text-sm font-bold text-gray-700">
           Memoria:
         </label>
         <select
-          name="memoria"
-          id="memoria"
+          name="almacenamiento"
+          id="almacenamiento"
           className="mt-2 p-2 border rounded w-full"
           onChange={handleMemoriaChange} // Detecta el cambio de selección
         >
           <option value="">Todas las capacidades</option>
-          <option value="32GB">32 GB</option>
           <option value="64GB">64 GB</option>
           <option value="128GB">128 GB</option>
           <option value="256GB">256 GB</option>
