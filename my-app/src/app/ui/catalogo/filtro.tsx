@@ -1,4 +1,21 @@
-export default function FiltroSidebar() {
+"use client";
+
+export interface Filtros {
+  marca: string;
+  memoria: string;
+}
+
+export default function FiltroSidebar({ onFilterChange }: { onFilterChange: (filtro: Partial<Filtros>) => void }) {
+  const handleMarcaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const marcaSeleccionada = e.target.value;
+    onFilterChange({ marca: marcaSeleccionada }); // Actualiza el filtro de marca
+  };
+
+  const handleMemoriaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const memoriaSeleccionada = e.target.value;
+    onFilterChange({ memoria: memoriaSeleccionada }); // Actualiza el filtro de memoria
+  };
+
   return (
     <div className="w-64 h-screen p-4 border-r-2 border-[#5b60ff] bg-[#ebebff] fixed left-0 top-20 shadow-md">
       <h2 className="text-lg font-bold mb-4">Filtros</h2>
@@ -12,6 +29,7 @@ export default function FiltroSidebar() {
           name="marca"
           id="marca"
           className="mt-2 p-2 border rounded w-full"
+          onChange={handleMarcaChange} // Detecta el cambio de selección
         >
           <option value="">Todas las marcas</option>
           <option value="SAMSUNG">Samsung</option>
@@ -27,22 +45,6 @@ export default function FiltroSidebar() {
         </select>
       </div>
 
-      {/* Filtro por precio */}
-      <div className="mb-4">
-        <label htmlFor="precio" className="block text-sm font-bold text-gray-700">
-          Precio máximo:
-        </label>
-        <input
-          type="range"
-          id="precio"
-          name="precio"
-          min="0"
-          max="2000"
-          step="100"
-          className="w-full mt-2 accent-[#5b60ff]"
-        />
-      </div>
-
       {/* Filtro por memoria */}
       <div className="mb-4">
         <label htmlFor="memoria" className="block text-sm font-bold text-gray-700">
@@ -52,6 +54,7 @@ export default function FiltroSidebar() {
           name="memoria"
           id="memoria"
           className="mt-2 p-2 border rounded w-full"
+          onChange={handleMemoriaChange} // Detecta el cambio de selección
         >
           <option value="">Todas las capacidades</option>
           <option value="32GB">32 GB</option>
@@ -61,14 +64,6 @@ export default function FiltroSidebar() {
           <option value="512GB">512 GB</option>
         </select>
       </div>
-
-      {/* Botón para aplicar filtros */}
-      <button
-        type="button"
-        className="w-full bg-[#5b60ff] text-white px-4 py-2 rounded hover:bg-[#2f36fa]"
-      >
-        Aplicar Filtros
-      </button>
     </div>
   );
 }

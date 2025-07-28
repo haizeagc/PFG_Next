@@ -1,16 +1,28 @@
-import { Movil } from "@/app/lib/definition"; // Importa el tipo Movil desde definition.tsx
-import Image from "next/image"; // Importa el componente Image de Next.js
+"use client";
 
-export default async function DatoMovil() {
-  const response = await fetch("http://localhost:3001/telefonos");
-  const telefonos = await response.json();
+import { useEffect, useState } from "react";
+import { Movil } from "@/app/lib/definition"; 
+import Image from "next/image";
+
+export default function DatoMovil({ filtros }: { filtros: { memoria: string; marca: string } }) {
+  const [telefonos, setTelefonos] = useState<Movil[]>([]); // Estado con tipado estricto
+
+  useEffect(() => {
+    const fetchTelefonos = async () => {
+      const queryParams = new URLSearchParams(filtros).toString(); // Convierte los filtros en parámetros de consulta
+      const url = filtros.marca === "" ? `http://localhost:3001/telefonos` : `http://localhost:3001/telefonos?${queryParams}`; // Si no hay marca, usa la URL sin filtros
+      const response = await fetch(url);
+      const data: Movil[] = await response.json(); // Tipado explícito para los datos obtenidos
+      setTelefonos(data); // Actualiza los teléfonos obtenidos
+    };
+
+    fetchTelefonos();
+  }, [filtros]); // Ejecuta la solicitud cada vez que los filtros cambian
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 p-8 mx-auto max-w-screen-xl">
-      {telefonos.map((telefono: Movil) => (
-        <div
-          key={telefono.id}
-          className="p-4 rounded shadow-lg w-64 h-auto transition-transform hover:scale-105"
-        >
+    <div className="mt-8 mb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {telefonos.map((telefono) => (
+        <div key={telefono.id} className="p-4 rounded shadow-lg">
           <Image
             src={`/imagenes/${telefono.id}.jpg`} // Ruta dinámica basada en el id del teléfono
             alt={`${telefono.marca} ${telefono.modelo}`}
