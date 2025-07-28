@@ -57,10 +57,10 @@ export default function FiltroSidebar({ onFilterChange }: { onFilterChange: (fil
           onChange={handleMemoriaChange} // Detecta el cambio de selección
         >
           <option value="">Todas las capacidades</option>
-          <option value="64GB">64 GB</option>
-          <option value="128GB">128 GB</option>
-          <option value="256GB">256 GB</option>
-          <option value="512GB">512 GB</option>
+          <option value="64">64 GB</option>
+          <option value="128">128 GB</option>
+          <option value="256">256 GB</option>
+          <option value="512">512 GB</option>
         </select>
       </div>
     </div>
