@@ -294,6 +294,262 @@
             "almacenamiento": 256,
             "ram": 5,
             "precio": 6.75
+        },
+        {
+            "id": 33,
+            "marca": "TCL",
+            "modelo": "Onetouch 5041",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 0
+        },
+        {
+            "id": 34,
+            "marca": "OPPO",
+            "modelo": "A5",
+            "almacenamiento": 128,
+            "ram": 4,
+            "precio": 2.50
+        },
+        {
+            "id": 35,
+            "marca": "OPPO",
+            "modelo": "A5",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 5.00
+        },
+        {
+            "id": 36,
+            "marca": "MOTOROLA",
+            "modelo": "Moto G56",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 5.75
+        },
+        {
+            "id": 37,
+            "marca": "MOTOROLA",
+            "modelo": "Moto G86",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 6.25
+        },
+        {
+            "id": 38,
+            "marca": "SAMSUNG",
+            "modelo": "Galaxy A36",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 7.50
+        },
+        {
+            "id": 39,
+            "marca": "VIVO",
+            "modelo": "V50 Lite",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 7.50
+        },
+        {
+            "id": 40,
+            "marca": "HONOR",
+            "modelo": "400",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 7.75
+        },
+        {
+            "id": 41,
+            "marca": "XIAOMI",
+            "modelo": "Redmi Note 14 Pro",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 8.75
+        },
+        {
+            "id": 42,
+            "marca": "SAMSUNG",
+            "modelo": "Galaxy A56",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 9.00
+        },
+        {
+            "id": 43,
+            "marca": "MOTOROLA",
+            "modelo": "Edge 60",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 9.00
+        },
+        {
+            "id": 44,
+            "marca": "ZTE",
+            "modelo": "Nubia Flip 2",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 12.00
+        },
+        {
+            "id": 45,
+            "marca": "VIVO",
+            "modelo": "X2000 FE",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 12.00
+        },
+        {
+            "id": 46,
+            "marca": "APPLE",
+            "modelo": "iPhone 16e",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 12.50
+        },
+        {
+            "id": 47,
+            "marca": "OPPO",
+            "modelo": "Reno 13 Pro",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 12.75
+        },
+        {
+            "id": 48,
+            "marca": "XIAOMI",
+            "modelo": "14T Pro",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 13.50
+        },
+        {
+            "id": 49,
+            "marca": "APPLE",
+            "modelo": "iPhone 16e",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 15.25
+        },
+        {
+            "id": 50,
+            "marca": "SAMSUNG",
+            "modelo": "S25",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 15.50
+        },
+        {
+            "id": 51,
+            "marca": "XIAOMI",
+            "modelo": "Redmi Note 14 Pro+",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 16.50
+        },
+        {
+            "id": 52,
+            "marca": "SAMSUNG",
+            "modelo": "Galaxy Z Flip7 FE",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 16.50
+        },
+        {
+            "id": 53,
+            "marca": "XIAOMI",
+            "modelo": "15",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 16.50
+        },
+        {
+            "id": 54,
+            "marca": "GOOGLE",
+            "modelo": "Pixel 9a",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 16.50
+        },
+        {
+            "id": 55,
+            "marca": "APPLE",
+            "modelo": "iPhone 15",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 17.25
+        },
+        {
+            "id": 56,
+            "marca": "SAMSUNG",
+            "modelo": "Galaxy S25+",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 19.00
+        },
+        {
+            "id": 57,
+            "marca": "HONOR",
+            "modelo": "Magic7 Pro",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 19.00
+        },
+        {
+            "id": 58,
+            "marca": "APPLE",
+            "modelo": "iPhone 16e",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 20.25
+        },
+        {
+            "id": 59,
+            "marca": "XIAOMI",
+            "modelo": "13",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 20.25
+        },
+        {
+            "id": 60,
+            "marca": "SAMSUNG",
+            "modelo": "Galaxy Z Flip7",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 20.75
+        },
+        {
+            "id": 61,
+            "marca": "OPPO",
+            "modelo": "Find X8",
+            "almacenamiento": 512,
+            "ram": 5,
+            "precio": 21.25
+        },
+        {
+            "id": 62,
+            "marca": "SAMSUNG",
+            "modelo": "Galaxy S24 FE",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 21.50
+        },
+        {
+            "id": 63,
+            "marca": "APPLE",
+            "modelo": "iPhone 16",
+            "almacenamiento": 256,
+            "ram": 5,
+            "precio": 22.00
+        },
+        {
+            "id": 64,
+            "marca": "APPLE",
+            "modelo": "iPhone 16 Plus",
+            "almacenamiento": 128,
+            "ram": 5,
+            "precio": 22.50
         }
     ]
 }
