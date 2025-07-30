@@ -7,10 +7,11 @@ import DatoMovil from "../ui/catalogo/datoMovil";
 export interface Filtros {
   marca: string[]; // Permite múltiples marcas seleccionadas
   almacenamiento: string[]; // Permite múltiples capacidades seleccionadas
+  orden: "asc" | "desc" | ""; // Nuevo campo para el orden
 }
 
 export default function Catalogo() {
-  const [filtros, setFiltros] = useState<Filtros>({ marca: [], almacenamiento: [] }); // Estado inicial con arrays vacíos
+  const [filtros, setFiltros] = useState<Filtros>({ marca: [], almacenamiento: [], orden: "" }); // Estado inicial con arrays vacíos y orden vacío
 
   const handleFilterChange = (updater: (prevFiltros: Filtros) => Filtros) => {
     setFiltros((prevFiltros) => updater(prevFiltros)); // Actualiza los filtros seleccionados

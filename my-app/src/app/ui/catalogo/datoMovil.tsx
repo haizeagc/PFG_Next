@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Movil } from "@/app/lib/definition"; 
 import Image from "next/image";
 
-export default function DatoMovil({ filtros }: { filtros: { marca: string[]; almacenamiento: string[] } }) {
+export default function DatoMovil({ filtros }: { filtros: { marca: string[]; almacenamiento: string[]; orden: "asc" | "desc" | "" } }) {
   const [telefonos, setTelefonos] = useState<Movil[]>([]); // Estado para los teléfonos
   const [paginaActual, setPaginaActual] = useState(1); // Estado para la página actual
   const [totalPaginas, setTotalPaginas] = useState(0); // Estado para el total de páginas
@@ -16,12 +16,15 @@ export default function DatoMovil({ filtros }: { filtros: { marca: string[]; alm
 
       // Lógica para manejar los diferentes filtros
       if (filtros.marca.length > 0) {
-        const marcasQuery = filtros.marca.map((marca) => `marca=${marca}`).join("&"); // Construye la consulta con OR
+        const marcasQuery = filtros.marca.map((marca) => `marca=${marca}`).join("&");
         url += `&${marcasQuery}`;
       }
       if (filtros.almacenamiento.length > 0) {
-        const almacenamientoQuery = filtros.almacenamiento.map((memoria) => `almacenamiento=${memoria}`).join("&"); // Construye la consulta con OR
+        const almacenamientoQuery = filtros.almacenamiento.map((memoria) => `almacenamiento=${memoria}`).join("&");
         url += `&${almacenamientoQuery}`;
+      }
+      if (filtros.orden) {
+        url += `&_sort=precio&_order=${filtros.orden}`; // Agrega el orden por precio
       }
 
       try {
@@ -72,7 +75,9 @@ export default function DatoMovil({ filtros }: { filtros: { marca: string[]; alm
                 {telefono.marca} {telefono.modelo}
               </h2>
               <p className="text-sm text-gray-600">Almacenamiento: {telefono.almacenamiento}GB</p>
-              <p className="text-sm text-gray-600">RAM: {telefono.ram}</p>
+              <p className="text-sm text-gray-600 font-bold">
+                {telefono.precio === 0 ? "GRATIS" : `Precio: ${telefono.precio}€`}
+              </p>
             </div>
           ))
         ) : (
@@ -97,7 +102,7 @@ export default function DatoMovil({ filtros }: { filtros: { marca: string[]; alm
             key={pagina}
             onClick={() => handlePaginaClick(pagina)}
             className={`px-4 py-2 rounded ${
-              pagina === paginaActual ? "bg-blue-500 text-white" : "bg-gray-300 hover:bg-gray-400"
+              pagina === paginaActual ? "bg-[#4247fc] text-white" : "bg-gray-300 hover:bg-gray-400"
             }`}
           >
             {pagina}
