@@ -16,7 +16,7 @@ export default function Elecciones() {
 
   return (
     <div className="flex justify-center items-center my-8">
-      <div className="w-auto h-auto p-4 rounded shadow-md bg-purple-100 text-center">
+      <div className="w-auto h-auto p-4 rounded shadow-md bg-[#bdbfff] text-center">
         <h2 className="text-lg font-bold mb-4">CREA TU PROPIA TARIFA</h2>
         <form className="flex flex-row gap-8 items-center">
           {/* Selección de minutos con botones */}
@@ -32,9 +32,9 @@ export default function Elecciones() {
                   onClick={() => handleMinutosChange(minutos)}
                   className={`px-4 py-2 border rounded ${
                     minutosSeleccionados === minutos
-                      ? "bg-purple-500 text-white"
+                      ? "bg-[#5b60ff] text-white"
                       : "bg-gray-200 text-black"
-                  } hover:bg-purple-400`}
+                  } hover:bg-[#343afa]`}
                 >
                   {minutos}
                 </button>
@@ -56,14 +56,14 @@ export default function Elecciones() {
               step="1"
               value={datos}
               onChange={handleDatosChange}
-              className="w-full mt-2 appearance-none bg-purple-300 h-2 rounded-full accent-purple-500"
+              className="w-full mt-2 appearance-none bg-[#5b60ff] h-2 rounded-full accent-[#5b60ff]"
             />
           </div>
 
           {/* Botón para contratar */}
           <button
             type="submit"
-            className="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700"
+            className="mt-4 bg-[#5b60ff] text-white px-4 py-2 rounded hover:bg-[#343afa]"
           >
             Contratar
           </button>
