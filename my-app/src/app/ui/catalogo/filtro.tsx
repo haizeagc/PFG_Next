@@ -70,8 +70,8 @@ export default function FiltroSidebar({
 
       {/* Filtro por memoria */}
       <div className="mb-4">
-        <h3 className="block text-sm font-bold text-white mb-2">Memoria:</h3>
-        {["32GB", "64GB", "128GB", "256GB", "512GB"].map((memoria) => (
+        <h3 className="block text-sm font-bold text-white mb-2">Memoria(GB):</h3>
+        {["64", "128", "256", "512"].map((memoria) => (
           <div key={memoria} className="flex items-center mb-2">
             <input
               type="checkbox"
