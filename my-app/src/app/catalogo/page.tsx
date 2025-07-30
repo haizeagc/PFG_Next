@@ -4,11 +4,16 @@ import { useState } from "react";
 import FiltroSidebar from "../ui/catalogo/filtro";
 import DatoMovil from "../ui/catalogo/datoMovil";
 
-export default function Catalogo() {
-  const [filtros, setFiltros] = useState({ almacenamiento: "", marca: "" }); // Estado inicial vacío para mostrar todos los móviles
+export interface Filtros {
+  marca: string[]; // Permite múltiples marcas seleccionadas
+  almacenamiento: string[]; // Permite múltiples capacidades seleccionadas
+}
 
-  const handleFilterChange = (nuevoFiltro: Partial<{ almacenamiento: string; marca: string }>) => {
-    setFiltros((prevFiltros) => ({ ...prevFiltros, ...nuevoFiltro })); // Actualiza los filtros seleccionados
+export default function Catalogo() {
+  const [filtros, setFiltros] = useState<Filtros>({ marca: [], almacenamiento: [] }); // Estado inicial con arrays vacíos
+
+  const handleFilterChange = (updater: (prevFiltros: Filtros) => Filtros) => {
+    setFiltros((prevFiltros) => updater(prevFiltros)); // Actualiza los filtros seleccionados
   };
 
   return (

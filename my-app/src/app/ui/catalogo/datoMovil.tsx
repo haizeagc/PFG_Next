@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { Movil } from "@/app/lib/definition"; 
 import Image from "next/image";
 
-export default function DatoMovil({ filtros }: { filtros: { almacenamiento: string; marca: string } }) {
-  const [telefonos, setTelefonos] = useState<Movil[]>([]); // Estado con tipado estricto
+export default function DatoMovil({ filtros }: { filtros: { marca: string[]; almacenamiento: string[] } }) {
+  const [telefonos, setTelefonos] = useState<Movil[]>([]); // Estado para los teléfonos
   const [paginaActual, setPaginaActual] = useState(1); // Estado para la página actual
   const [totalPaginas, setTotalPaginas] = useState(0); // Estado para el total de páginas
   const LIMITE_POR_PAGINA = 8; // Límite de elementos por página
@@ -15,12 +15,13 @@ export default function DatoMovil({ filtros }: { filtros: { almacenamiento: stri
       let url = `http://localhost:3001/telefonos?_page=${paginaActual}&_limit=${LIMITE_POR_PAGINA}`;
 
       // Lógica para manejar los diferentes filtros
-      if (filtros.marca && !filtros.almacenamiento) {
-        url += `&marca=${filtros.marca}`; // Filtra solo por marca
-      } else if (filtros.almacenamiento && !filtros.marca) {
-        url += `&almacenamiento=${filtros.almacenamiento}`; // Filtra solo por memoria
-      } else if (filtros.marca && filtros.almacenamiento) {
-        url += `&marca=${filtros.marca}&almacenamiento=${filtros.almacenamiento}`; // Filtra por ambos
+      if (filtros.marca.length > 0) {
+        const marcasQuery = filtros.marca.map((marca) => `marca=${marca}`).join("&"); // Construye la consulta con OR
+        url += `&${marcasQuery}`;
+      }
+      if (filtros.almacenamiento.length > 0) {
+        const almacenamientoQuery = filtros.almacenamiento.map((memoria) => `almacenamiento=${memoria}`).join("&"); // Construye la consulta con OR
+        url += `&${almacenamientoQuery}`;
       }
 
       try {
@@ -85,21 +86,21 @@ export default function DatoMovil({ filtros }: { filtros: { almacenamiento: stri
         <button
           onClick={handlePaginaAnterior}
           disabled={paginaActual === 1}
-          className="px-4 py-2 bg-[#5b60ff] text-white rounded disabled:opacity-50"
+          className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 disabled:opacity-50"
         >
-          Anterior
+          &lt;
         </button>
 
-        {/* Botones de páginas */}
-        {Array.from({ length: totalPaginas }, (_, index) => (
+        {/* Botones numerados */}
+        {Array.from({ length: totalPaginas }, (_, index) => index + 1).map((pagina) => (
           <button
-            key={index + 1}
-            onClick={() => handlePaginaClick(index + 1)}
+            key={pagina}
+            onClick={() => handlePaginaClick(pagina)}
             className={`px-4 py-2 rounded ${
-              paginaActual === index + 1 ? "bg-[#5b60ff]  text-white" : "bg-gray-300"
+              pagina === paginaActual ? "bg-blue-500 text-white" : "bg-gray-300 hover:bg-gray-400"
             }`}
           >
-            {index + 1}
+            {pagina}
           </button>
         ))}
 
@@ -107,9 +108,9 @@ export default function DatoMovil({ filtros }: { filtros: { almacenamiento: stri
         <button
           onClick={handlePaginaSiguiente}
           disabled={paginaActual === totalPaginas}
-          className="px-4 py-2 bg-[#5b60ff] text-white rounded disabled:opacity-50"
+          className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 disabled:opacity-50"
         >
-          Siguiente
+          &gt;
         </button>
       </div>
     </div>
