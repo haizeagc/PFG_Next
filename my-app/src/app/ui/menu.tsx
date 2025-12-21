@@ -12,8 +12,8 @@ export default function Menu() {
         <li>
           <Link
             href="/"
-            className={`text-sm hover:text-black active:text-violet-300 cursor-pointer transition-transform ${
-              pathname === "/" ? "text-black font-bold" : "text-white font-normal"
+            className={`text-base hover:text-[#42dcff] active:text-violet-300 cursor-pointer transition-transform ${
+              pathname === "/" ? "text-white font-bold" : "text-white font-normal"
             }`}
           >
             INICIO
@@ -22,8 +22,8 @@ export default function Menu() {
         <li>
           <Link
             href="/tarifas"
-            className={`text-sm hover:text-black active:text-violet-300 cursor-pointer transition-transform ${
-              pathname === "/tarifas" ? "text-black font-bold" : "text-white font-normal"
+            className={`text-base hover:text-[#42dcff] active:text-violet-300 cursor-pointer transition-transform ${
+              pathname === "/tarifas" ? "text-white font-bold" : "text-white font-normal"
             }`}
           >
             TARIFAS
@@ -32,8 +32,8 @@ export default function Menu() {
         <li>
           <Link
             href="/catalogo"
-            className={`text-sm hover:text-black active:text-violet-300 cursor-pointer transition-transform ${
-              pathname === "/catalogo" ? "text-black font-bold" : "text-white font-normal"
+            className={`text-base hover:text-[#42dcff] active:text-violet-300 cursor-pointer transition-transform ${
+              pathname === "/catalogo" ? "text-white font-bold" : "text-white font-normal"
             }`}
           >
             CATÁLOGO

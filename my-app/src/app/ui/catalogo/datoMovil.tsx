@@ -86,13 +86,20 @@ export default function DatoMovil({
         height={160} // Altura de la imagen
         className="w-full h-50 object-cover mb-4 rounded"
       />
-      <h2 className="font-bold text-black text-center">
-        {telefono.marca} {telefono.modelo}
+      <p className="text-lg text-center">{telefono.marca}</p>
+      <h2 className="font-bold text-lg text-center">
+         {telefono.modelo} {telefono.almacenamiento}GB
       </h2>
-      <p className="text-sm text-gray-600">Almacenamiento: {telefono.almacenamiento}GB</p>
-      <p className="text-sm text-gray-600 font-bold">
-        {telefono.precio === 0 ? "GRATIS" : `Precio: ${telefono.precio}€`}
-      </p>
+      <p className="text-sm font-bold text-center">
+        {telefono.precio === 0 ? (
+          "GRATIS"
+        ) : (
+        <>
+      <span className="text-2xl">{Math.floor(telefono.precio)}</span>
+      <span className="text-sm">,{telefono.precio.toFixed(2).split(".")[1]}€/mes</span>
+        </>
+    )}
+  </p>
     </div>
   ))
 ) : (
