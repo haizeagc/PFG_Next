@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 
+
 const imagenes = [
   "/carrusel/01.jpg",
   "/carrusel/02.jpg",
