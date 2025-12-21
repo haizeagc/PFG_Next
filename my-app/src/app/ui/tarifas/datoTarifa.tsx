@@ -17,22 +17,17 @@ export default async function DatoTarifa() {
                 key={tarifa.id}
                 className="p-4 rounded shadow-lg bg-gray-100 transition-transform hover:scale-105"
               >
-                <h2 className="font-bold text-black">{tarifa.descripcion}</h2>
-                <p>
-                  <strong>Precio Mensual:</strong> {tarifa.precioMensual}€
-                </p>
-                <p>
-                  <strong>Minutos Incluidos:</strong> {tarifa.minutosIncluidos}
-                </p>
-                <p>
-                  <strong>Datos Incluidos:</strong> {tarifa.datosIncluidos}
-                </p>
-                <p>
-                  <strong>Mensajes Incluidos:</strong> {tarifa.mensajesIncluidos}
-                </p>
-                <button className="mt-2 mb-2 bg-[#5b60ff] text-white px-4 py-2 rounded hover:bg-[#343afa]">
-                  Más información
+                <div className="flex items-baseline justify-center gap-1">
+                <p className="text-6xl font-bold text-center">{tarifa.precioMensual}</p>  
+                <p className="text-2xl text-center">,00€/mes</p>
+                </div>
+                <button className=" font-bold mt-2 mb-2 bg-[#5b60ff] text-white px-4 py-2 rounded hover:bg-[#4a52d4] w-full">
+                  VER TARIFA
                 </button>
+                <h2 className=" text-xl font-bold text-black text-center">{tarifa.nombre}</h2>
+                <p className="text-center">{tarifa.minutosIncluidos} minutos</p>
+                <p className="text-center">{tarifa.datosIncluidos}GB</p>
+                <p className="text-center">{tarifa.mensajesIncluidos} mensajes</p>
               </div>
             ))}
           </div>
