@@ -32,17 +32,17 @@ export default function Elecciones() {
   return (
     <div className="flex flex-col justify-center items-center my-8">
     {/* Título principal */}
-    <h2 className="text-lg font-bold mb-4">CONFIGURA TU TARIFA FIBRA Y MÓVIL</h2>
+    <h2 className="text-3xl font-bold mb-4">CONFIGURA TU TARIFA FIBRA Y MÓVIL</h2>
   
     {/* Contenedor del formulario */}
-    <div className="w-auto h-auto p-4 rounded shadow-md bg-[#bdbfff] text-center">
+    <div className="w-auto h-auto p-4 shadow-md bg-[#bdbfff] text-center">
       <form className="flex flex-col gap-8 items-center">
         {/* Contenedor de fibra, minutos, precio y botón en la misma fila */}
         <div className="flex flex-row gap-8 items-center">
           {/* Selección de fibra con botones */}
           <div>
-            <label className="block text-sm font-medium mb-2">Velocidad de fibra</label>
-            <div className="p-4 bg-white rounded-lg shadow-md font-bold">
+            <label className="block text-xl font-bold mb-2">Velocidad de fibra</label>
+            <div className="p-4 bg-white rounded-full shadow-md font-bold">
               <div className="flex gap-2">
                 {["600 Mb", "1 GB"].map((fibra) => (
                   <button
@@ -64,8 +64,8 @@ export default function Elecciones() {
   
           {/* Selección de minutos con botones */}
           <div>
-            <label className="block text-sm font-medium mb-2">Línea móvil principal</label>
-            <div className="p-4 bg-white rounded-lg shadow-md font-bold">
+            <label className="block text-xl font-bold mb-2">Línea móvil principal</label>
+            <div className="p-4 bg-white rounded-full shadow-md font-bold">
               <div className="flex gap-2">
                 {["200 GB", "300 GB", "GB Ilimitados"].map((minutos) => (
                   <button
@@ -90,7 +90,8 @@ export default function Elecciones() {
   {/* Precio total */}
   <div className="mb-4">
     <div className="p-4 bg-white rounded-lg shadow-md font-bold">
-      {calcularPrecioTotal()},00€/mes
+    <span className="text-5xl text-[#5b60ff] font-bold">{calcularPrecioTotal()}</span>
+    <span className="text-sm text-gray-600">,00€/mes</span>
       <label className="block text-sm font-medium mb-2">Precio final</label>
     </div>
   </div>

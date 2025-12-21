@@ -7,7 +7,7 @@ export default async function DatoTarifa() {
     return (
       <div className="flex flex-col items-center justify-center p-8">
         {/* Cuadrado morado con el primer h1 */}
-        <h1 className="text-lg font-bold mb-4">TARIFAS DE LA EMPRESA</h1>
+        <h1 className="text-3xl font-bold mb-4">TARIFAS DE LA EMPRESA</h1>
   
         {/* Contenedor de las tarifas */}
         <div className="w-full p-4 shadow-md bg-white">
