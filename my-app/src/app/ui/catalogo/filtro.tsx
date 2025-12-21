@@ -111,43 +111,45 @@ export default function FiltroSidebar({
         )}
       </div>
 
-      {/* Ordenar por precio */}
-      <div className="mb-4">
-        <h3
-          className="block text-sm font-bold text-white mb-2 cursor-pointer"
-          onClick={() => setPrecioVisible(!precioVisible)} // Alterna la visibilidad
-        >
-          ORDENAR POR PRECIO {precioVisible ? "▲" : "▼"}
-        </h3>
-        {precioVisible && (
-          <div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                id="orden-asc"
-                value="asc"
-                onChange={handleOrdenChange}
-                className="mr-2 accent-[#5b60ff]"
-              />
-              <label htmlFor="orden-asc" className="text-sm text-white">
-                Menor a mayor
-              </label>
-            </div>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                id="orden-desc"
-                value="desc"
-                onChange={handleOrdenChange}
-                className="mr-2 accent-[#5b60ff]"
-              />
-              <label htmlFor="orden-desc" className="text-sm text-white">
-                Mayor a menor
-              </label>
-            </div>
-          </div>
-        )}
+{/* Ordenar por precio */}
+<div className="mb-4">
+  <h3
+    className="block text-sm font-bold text-white mb-2 cursor-pointer"
+    onClick={() => setPrecioVisible(!precioVisible)} // Alterna la visibilidad
+  >
+    ORDENAR POR PRECIO {precioVisible ? "▲" : "▼"}
+  </h3>
+  {precioVisible && (
+    <div>
+      <div className="flex items-center mb-2">
+        <input
+          type="radio"
+          id="orden-asc"
+          name="orden-precio" // Agrupa los radio buttons
+          value="asc"
+          onChange={handleOrdenChange}
+          className="mr-2 accent-[#5b60ff]"
+        />
+        <label htmlFor="orden-asc" className="text-sm text-white">
+          Menor a mayor
+        </label>
       </div>
+      <div className="flex items-center mb-2">
+        <input
+          type="radio"
+          id="orden-desc"
+          name="orden-precio" // Agrupa los radio buttons
+          value="desc"
+          onChange={handleOrdenChange}
+          className="mr-2 accent-[#5b60ff]"
+        />
+        <label htmlFor="orden-desc" className="text-sm text-white">
+          Mayor a menor
+        </label>
+      </div>
+    </div>
+  )}
+</div>
 
       {/* Botón para reiniciar filtros */}
       <div className="mt-4">
