@@ -31,7 +31,7 @@
             "id": 4,
             "nombre": "Tarifa Empresarial",
             "descripcion": "Tarifa preparada para las empresas.",
-            "precioMensual": 61.90,
+            "precioMensual": 61.00,
             "minutosIncluidos": 400,
             "datosIncluidos": 300,
             "mensajesIncluidos": 400

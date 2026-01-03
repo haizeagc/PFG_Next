@@ -33,30 +33,29 @@ export default function Ventanita({ telefono, visible, onClose }: VentanitaProps
           </button>
   
           {/* Contenido del teléfono */}
-          <h2 className="text-xl font-bold mb-4 text-[#5b60ff] text-center">
+          <h2 className="text-3xl font-bold mb-4 text-[#5b60ff] text-center">
             {telefono.marca} {telefono.modelo}
           </h2>
-          <div className="mb-4">
-            <p className="text-sm text-gray-700">
-              <strong>Precio:</strong> {telefono.precio === 0 ? "GRATIS" : `${telefono.precio}€`}
-            </p>
-            <p className="text-sm text-gray-700">
-              <strong>Almacenamiento:</strong> {telefono.almacenamiento}GB
-            </p>
-            <p className="text-sm text-gray-700">
-              <strong>RAM:</strong> {telefono.ram}GB
-            </p>
-          </div>
-  
           {/* Imagen del teléfono */}
           <div className="flex justify-center">
             <Image
               src={`/imagenes/${telefono.id}.jpg`} // Ruta dinámica basada en el id del teléfono
               alt={`${telefono.marca} ${telefono.modelo}`}
-              width={300} // Ancho de la imagen
-              height={240} // Altura de la imagen
+              width={150} // Ancho de la imagen
+              height={120} // Altura de la imagen
               className="w-full h-auto object-cover mb-4 rounded"
             />
+          </div>
+          <div className="mb-4">
+            <p className="text-6xl text-center text-bold">
+              {telefono.precio === 0 ? "GRATIS" : `${telefono.precio}€`}
+            </p>
+            <p className="text-xl text-center">
+              Almacenamiento: {telefono.almacenamiento}GB
+            </p>
+            <p className="text-xl text-center">
+              RAM: {telefono.ram}GB
+            </p>
           </div>
         </div>
       </div>
